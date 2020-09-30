@@ -1,6 +1,6 @@
 # shoppinglist
 
-A new Flutter application.
+First flutter application to create a shopping list with a strikethrough function utlizing fundamental dart principles.
 
 ## Getting Started
 
