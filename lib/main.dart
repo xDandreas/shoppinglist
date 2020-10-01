@@ -330,7 +330,7 @@ class _AboutPage extends StatelessWidget {
   final String _bio =
       "\"I am Daavid A.S. Sinclair. I am a 19 year old male, who is from Jamaica."
       "I am a senior at NCU. I am pursuing a Batchelors degree in Computer Science where my concentration is Software Engineering.\"";
-  final String _projects = "173";
+  final String _projects = "5";
   final String _age = "19";
 
 
@@ -454,13 +454,6 @@ class _AboutPage extends StatelessWidget {
   }
 
   Widget _buildSkillItem(String label) {
-    TextStyle _statLabelTextStyle = TextStyle(
-      //fontFamily: 'Roboto',
-      color: Colors.black,
-      fontSize: 16.0,
-      fontWeight: FontWeight.w200,
-    );
-
     TextStyle _statCountTextStyle = TextStyle(
       color: Colors.black,
       fontSize: 24.0,
@@ -489,7 +482,7 @@ class _AboutPage extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: <Widget>[
-          _buildStatItem("Projects", _projects),
+          _buildStatItem("Major Projects", _projects),
           _buildStatItem("Age", _age),
         ],
       ),
