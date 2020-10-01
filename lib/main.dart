@@ -368,7 +368,6 @@ class _AboutPage extends StatelessWidget {
 
   Widget _buildFullName() {
     TextStyle _nameTextStyle = TextStyle(
-      //fontFamily: 'Roboto',
       color: Colors.black,
       fontSize: 28.0,
       fontWeight: FontWeight.w700,
@@ -395,7 +394,6 @@ class _AboutPage extends StatelessWidget {
       child: Text(
         _status,
         style: TextStyle(
-          //fontFamily: 'Spectral',
           color: Colors.black,
           fontSize: 20.0,
           fontWeight: FontWeight.w300,
@@ -414,7 +412,6 @@ class _AboutPage extends StatelessWidget {
         skill,
         textAlign: TextAlign.center,
         style: TextStyle(
-          //fontFamily: 'Spectral',
           color: Colors.black,
           fontSize: 20.0,
           fontWeight: FontWeight.w300,
@@ -426,7 +423,6 @@ class _AboutPage extends StatelessWidget {
 
   Widget _buildStatItem(String label, String count) {
     TextStyle _statLabelTextStyle = TextStyle(
-      //fontFamily: 'Roboto',
       color: Colors.black,
       fontSize: 16.0,
       fontWeight: FontWeight.w200,
