@@ -214,7 +214,6 @@ class _ListItemState extends State<ListItem> {
                 ),
               ),
             ),
-
             IconButton(
               color: Colors.red,
               onPressed: widget.onClosed,
@@ -246,7 +245,6 @@ class _ListItemState extends State<ListItem> {
                     fontSize: 16.0, decoration: TextDecoration.lineThrough),
               ),
             ),
-
             IconButton(
               color: Colors.red,
               onPressed: widget.onClosed,
@@ -333,7 +331,6 @@ class _AboutPage extends StatelessWidget {
   final String _projects = "5";
   final String _age = "19";
 
-
   Widget _buildCoverImage(Size screenSize) {
     return Container(
       height: screenSize.height / 2.6,
@@ -386,9 +383,7 @@ class _AboutPage extends StatelessWidget {
     return Container(
       padding: EdgeInsets.symmetric(vertical: 4.0, horizontal: 6.0),
       decoration: BoxDecoration(
-        color: Theme
-            .of(context)
-            .scaffoldBackgroundColor,
+        color: Theme.of(context).scaffoldBackgroundColor,
         borderRadius: BorderRadius.circular(4.0),
       ),
       child: Text(
@@ -415,7 +410,6 @@ class _AboutPage extends StatelessWidget {
           color: Colors.black,
           fontSize: 20.0,
           fontWeight: FontWeight.w300,
-
         ),
       ),
     );
@@ -467,7 +461,6 @@ class _AboutPage extends StatelessWidget {
     );
   }
 
-
   Widget _buildStatContainer() {
     return Container(
       height: 50.0,
@@ -484,6 +477,7 @@ class _AboutPage extends StatelessWidget {
       ),
     );
   }
+
   Widget _buildSkillContainer() {
     return Container(
       height: 40.0,
@@ -500,7 +494,6 @@ class _AboutPage extends StatelessWidget {
     );
   }
 
-
   Widget _buildBio(BuildContext context) {
     TextStyle bioTextStyle = TextStyle(
       //fontFamily: 'Spectral',
@@ -511,9 +504,7 @@ class _AboutPage extends StatelessWidget {
     );
 
     return Container(
-      color: Theme
-          .of(context)
-          .scaffoldBackgroundColor,
+      color: Theme.of(context).scaffoldBackgroundColor,
       padding: EdgeInsets.all(8.0),
       child: Text(
         _bio,
@@ -532,12 +523,9 @@ class _AboutPage extends StatelessWidget {
     );
   }
 
-
   @override
   Widget build(BuildContext context) {
-    Size screenSize = MediaQuery
-        .of(context)
-        .size;
+    Size screenSize = MediaQuery.of(context).size;
 
     return Scaffold(
       appBar: AppBar(
@@ -551,8 +539,7 @@ class _AboutPage extends StatelessWidget {
               child: Column(
                 children: <Widget>[
                   SizedBox(height: screenSize.height / 10.4),
-                  Positioned(
-                      child: _buildProfileImage()),
+                  _buildProfileImage(),
                   Container(
                     color: Colors.white,
                     child: Column(
@@ -563,7 +550,8 @@ class _AboutPage extends StatelessWidget {
                         _buildBio(context),
                         _buildSeparator(screenSize),
                         _buildSkillContainer(),
-                        _buildSkills("C#, C++, Python, Java, Dart, ASP.net, Flask, PHP, Laravel, Flutter")
+                        _buildSkills(
+                            "C#, C++, Python, Java, Dart, ASP.net, Flask, PHP, Laravel, Flutter")
                       ],
                     ),
                   ),
