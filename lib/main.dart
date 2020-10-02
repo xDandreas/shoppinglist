@@ -216,7 +216,15 @@ class _ListItemState extends State<ListItem> {
             ),
             IconButton(
               color: Colors.red,
-              onPressed: widget.onClosed,
+              onPressed: () {
+                final snackBar = SnackBar(
+                  backgroundColor: Colors.red,
+                  content: Text('Item Removed.'),
+                );
+                widget.onClosed();
+
+                Scaffold.of(context).showSnackBar(snackBar);
+              },
               icon: Icon(Icons.close),
             )
           ],
@@ -247,7 +255,15 @@ class _ListItemState extends State<ListItem> {
             ),
             IconButton(
               color: Colors.red,
-              onPressed: widget.onClosed,
+              onPressed: () {
+                final snackBar = SnackBar(
+                  backgroundColor: Colors.red,
+                  content: Text('Item Removed.'),
+                );
+                widget.onClosed();
+
+                Scaffold.of(context).showSnackBar(snackBar);
+              },
               icon: Icon(Icons.close),
             )
           ],
